@@ -1,6 +1,6 @@
 # Planificación y Suavizado de Trayectorias Globales — BrandsHatch
 
-Este documento explica, paso a paso, todo el proceso realizado sobre el
+Se explica, paso a paso, todo el proceso realizado sobre el
 mapa **BrandsHatch**: generación de trayectorias globales con dos
 algoritmos de planificación (**Parte A**) y su posterior suavizado
 (**Parte B**), cumpliendo con la separación de waypoints de **0.5 m** y
@@ -135,13 +135,21 @@ x,y
 
 ### A.6 — Resultados Parte A (trayectorias crudas / centradas, antes del suavizado)
 
-**Dijkstra**
+**Dijkstra 0.5m**
 
-![Dijkstra crudo 0.5m](dijkstra_path.png)
+![Dijkstra crudo 0.5m](dijkstra_raw_0.5m.png)
 
-**RRT**
+**Dijkstra 1.0m**
 
-![RRT crudo 0.5m](rrt_path.png)
+![Dijkstra crudo 0.5m](dijkstra_raw_1.0m.png)
+
+**RRT 0.5m**
+
+![RRT crudo 0.5m](rrt_raw_0.5m.png)
+
+**RRT 1.0m**
+
+![RRT crudo 0.5m](rrt_raw_1.0m.png)
 
 
 **Comparación general Dijkstra vs RRT (vuelta completa)**
