@@ -259,3 +259,6 @@ En `f1tenth/output/`:
 ---
 
 
+## Procedimiento:
+
+[Ver video de evidencia en YouTube](https://youtu.be/iksdpy8Bv-A)
