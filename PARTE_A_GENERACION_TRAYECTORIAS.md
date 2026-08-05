@@ -1,14 +1,13 @@
 # Parte A — Generación de trayectorias globales (Dijkstra + RRT)
 
-Este documento explica, paso a paso, cómo se generaron las trayectorias globales
+Se generaran las trayectorias globales
 sobre el mapa **BrandsHatch** usando dos algoritmos de planificación:
 
 - **Dijkstra** (algoritmo asignado)
 - **RRT** (segunda técnica de planificación)
 
 Para cada algoritmo se generan waypoints con dos espaciados distintos:
-**0.5 m** y **1.0 m**, cubriendo la vuelta completa del circuito (no solo un
-tramo).
+**0.5 m** y **1.0 m**, cubriendo la vuelta completa del circuito 
 
 Repositorio base: [widegonz/Global_Planner](https://github.com/widegonz/Global_Planner),
 adaptado del repositorio original [ai-winter/python_motion_planning](https://github.com/ai-winter/python_motion_planning).
@@ -171,6 +170,9 @@ En `f1tenth/output/`:
 > Los archivos `dijkstra_path_0.5m.csv`, `dijkstra_path_1.0m.csv`,
 > `rrt_path_0.5m.csv`, `rrt_path_1.0m.csv` corresponden a la versión
 > **suavizada** (Parte B) — ver `PARTE_B_SUAVIZADO.md`.
+
+
+
 
 Formato de cada CSV:
 
