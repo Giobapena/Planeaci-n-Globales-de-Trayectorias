@@ -22,8 +22,7 @@ Script principal: `f1tenth/plan_brandshatch.py`
 Mapa BrandsHatch tal como se recibe (`.yaml` + `.png`), antes de cualquier
 procesamiento (binarización, downsampling, aislamiento del corredor).
 
-<!-- 📌 COLOCAR AQUÍ: captura del mapa original (BrandsHatch_map.png) -->
-![Mapa original BrandsHatch](RUTA_A_TU_IMAGEN/mapa_original.png)
+![Mapa original BrandsHatch](debug_wall.png)
 
 ---
 
@@ -136,21 +135,14 @@ x,y
 
 ### A.6 — Resultados Parte A (trayectorias crudas / centradas, antes del suavizado)
 
-**Dijkstra — 0.5 m**
-<!-- 📌 COLOCAR AQUÍ -->
-![Dijkstra crudo 0.5m](RUTA_A_TU_IMAGEN/dijkstra_raw_0.5m.png)
+**Dijkstra**
 
-**Dijkstra — 1.0 m**
-<!-- 📌 COLOCAR AQUÍ -->
-![Dijkstra crudo 1.0m](RUTA_A_TU_IMAGEN/dijkstra_raw_1.0m.png)
+![Dijkstra crudo 0.5m](dijkstra_path.png)
 
-**RRT — 0.5 m**
-<!-- 📌 COLOCAR AQUÍ -->
-![RRT crudo 0.5m](RUTA_A_TU_IMAGEN/rrt_raw_0.5m.png)
+**RRT**
 
-**RRT — 1.0 m**
-<!-- 📌 COLOCAR AQUÍ -->
-![RRT crudo 1.0m](RUTA_A_TU_IMAGEN/rrt_raw_1.0m.png)
+![RRT crudo 0.5m](rrt_path.png)
+
 
 **Comparación general Dijkstra vs RRT (vuelta completa)**
 <!-- 📌 COLOCAR AQUÍ: dijkstra_vs_rrt.png -->
@@ -203,19 +195,19 @@ suave y factible.
 ### B.4 — Resultados Parte B (antes/después del suavizado)
 
 **Dijkstra — 0.5 m (crudo vs. suavizado)**
-<!-- 📌 COLOCAR AQUÍ: dijkstra_smooth_vs_raw_0.5m.png -->
+
 ![Dijkstra suavizado vs crudo 0.5m](dijkstra_smooth_vs_raw_0.5m.png)
 
 **Dijkstra — 1.0 m (crudo vs. suavizado)**
-<!-- 📌 COLOCAR AQUÍ: dijkstra_smooth_vs_raw_1.0m.png -->
+
 ![Dijkstra suavizado vs crudo 1.0m](dijkstra_smooth_vs_raw_1.0m.png)
 
 **RRT — 0.5 m (crudo vs. suavizado)**
-<!-- 📌 COLOCAR AQUÍ: rrt_smooth_vs_raw_0.5m.png -->
+
 ![RRT suavizado vs crudo 0.5m](rrt_smooth_vs_raw_0.5m.png)
 
 **RRT — 1.0 m (crudo vs. suavizado)**
-<!-- 📌 COLOCAR AQUÍ: rrt_smooth_vs_raw_1.0m.png -->
+
 ![RRT suavizado vs crudo 1.0m](rrt_smooth_vs_raw_1.0m.png)
 
 **Trayectoria final Dijkstra (suavizada, centrada, vuelta completa)**
@@ -258,15 +250,4 @@ En `f1tenth/output/`:
 
 ---
 
-## 3. Cómo subir esto a GitHub
 
-```bash
-cd Global_Planner
-git add f1tenth/plan_brandshatch.py f1tenth/output/ README_TRAYECTORIAS.md
-git commit -m "Parte A y B: generacion y suavizado de trayectorias (Dijkstra y RRT) sobre BrandsHatch"
-git push origin master
-```
-
-> Nota: si colocas las imágenes en una subcarpeta distinta a la raíz del
-> repo, actualiza las rutas `![...](ruta.png)` de este documento en
-> consecuencia (deben ser relativas a la ubicación de este `.md`).
