@@ -171,7 +171,11 @@ En `f1tenth/output/`:
 > `rrt_path_0.5m.csv`, `rrt_path_1.0m.csv` corresponden a la versión
 > **suavizada** (Parte B) — ver `PARTE_B_SUAVIZADO.md`.
 
+![Trayectoria Dijkstra](f1tenth/output/dijkstra_path.png)
 
+![Comparación Dijkstra vs RRT](f1tenth/output/dijkstra_vs_rrt.png)
+
+![Trayectoria RRT](f1tenth/output/rrt_path.png)
 
 
 Formato de cada CSV:
