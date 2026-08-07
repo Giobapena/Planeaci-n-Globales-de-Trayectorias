@@ -43,4 +43,6 @@ logs/
 
 # temporary files
 tmp/
-tmp.*
+tmp.*venv/
+__pycache__/
+*.pyc

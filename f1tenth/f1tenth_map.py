@@ -84,8 +84,9 @@ def save_path_as_csv(path, filename, resolution, origin, image_height):
 
 if __name__ == "__main__":
     HERE = Path(__file__).resolve().parent
+
     yaml_path = HERE.parent / "Mapas-F1Tenth" / "example_map.yaml"
-    downsample_factor = 8  # Ajusta este valor según lo que necesites
+    downsample_factor = 8
 
     x_start, y_start = 0.0, 1.0
     x_goal, y_goal = 0.0, -1.5
